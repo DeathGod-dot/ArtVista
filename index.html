@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Art Exhibition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <a href="#home">ArtVista</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to ArtVista</h1>
+            <p>Where Art Meets Innovation</p>
+            <h2>Discover the World's Finest Artworks</h2>
+            <p class="hero-description">
+                Immerse yourself in our curated collection of masterpieces from renowned artists across centuries.
+                Experience art like never before through our interactive virtual exhibition.
+            </p>
+            <a href="#gallery" class="cta-button">Explore Gallery</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <header class="section-header">
+            <h2>Art Gallery</h2>
+            <nav class="gallery-nav">
+                <button class="nav-btn active" data-category="all">All</button>
+                <button class="nav-btn" data-category="paintings">Paintings</button>
+                <button class="nav-btn" data-category="sculptures">Sculptures</button>
+                <button class="nav-btn" data-category="photography">Photography</button>
+            </nav>
+        </header>
+
+        <main class="gallery-container">
+            <!-- Artwork items will be dynamically added here -->
+        </main>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About ArtVista</h2>
+            <div class="about-text">
+                <p class="about-intro">
+                    ArtVista is a premier virtual art exhibition platform, dedicated to bringing the world's most extraordinary artworks directly to your screen.
+                </p>
+                <div class="mission-vision">
+                    <div class="mission">
+                        <h3>Our Mission</h3>
+                        <p>To make fine art accessible to everyone by creating an immersive digital experience that transcends physical boundaries.</p>
+                    </div>
+                    <div class="vision">
+                        <h3>Our Vision</h3>
+                        <p>To become the world's leading virtual art platform, connecting art lovers with masterpieces from every era.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Curated Excellence</h3>
+                    <p>Carefully selected masterpieces from different periods and styles.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-vr-cardboard"></i>
+                    <h3>Virtual Experience</h3>
+                    <p>State-of-the-art digital platform for an immersive art viewing experience.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Educational Insight</h3>
+                    <p>Detailed historical context and artistic analysis for each artwork.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Access</h3>
+                    <p>Access to world-class art from anywhere in the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <h2>Our Expert Team</h2>
+        <p class="team-intro">Meet the passionate professionals behind ArtVista</p>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="./images/AbhishekSingh.jpg" alt="Abhishek Singh" onerror="this.src='https://via.placeholder.com/180'">
+                <h3>Abhishek Singh</h3>
+                <p class="position">Lead Developer</p>
+                <p class="credentials">B.Tech in Information Technology</p>
+                <p class="description">Expert in frontend development and UI/UX design</p>
+            </div>
+            <div class="team-member">
+                <img src="./images/NitishMadheshiya.jpg" alt="Nitish Madheshiya">
+                <h3>Nitish Madheshiya</h3>
+                <p class="position">Technical Director</p>
+                <p class="credentials">B.Tech in Information Technology</p>
+                <p class="description">Specialist in backend development and system architecture</p>
+            </div>
+            <div class="team-member">
+                <img src="./images/ShubhamYadav.jpg" alt="Shubham Yadav">
+                <h3>Shubham Yadav</h3>
+                <p class="position">Creative Director</p>
+                <p class="credentials">B.Tech in Information Technology</p>
+                <p class="description">Expert in digital design and content management</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact ArtVista</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@artvista.com</p>
+                            <p>support@artvista.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <p>+1 (555) 987-6543</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Art Vista Plaza</p>
+                            <p>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="contact-hours">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours of Operation</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday - Sunday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <h3>Send Us a Message</h3>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Select Subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Technical Support</option>
+                        <option value="partnership">Partnership</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required rows="5"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <div class="artwork-info">
+                <h2 id="modal-title"></h2>
+                <p id="modal-artist"></p>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Art Gallery</h3>
+                <p>Bringing art to the digital age</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
